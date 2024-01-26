@@ -1,6 +1,7 @@
 import lightimg from './light.png';
 import darkimg from './dark.png';
 import { useState } from 'react';
+import React from 'react';
 const Navbar = () => {
   const[sun,setsun]=useState(0);
   const navbarbgcolor=sun===0 ? "whitesmoke" : "black";
@@ -40,7 +41,7 @@ const Navbar = () => {
         </li>
         <li className="nav-item" style={{marginLeft:'20px'}}>
           <a className="nav-link fw-semibold " aria-disabled="true" onClick={changethem} style={{color:fontcolor}}>
-            { sun==0 ? <i className="fa-solid fa-sun"></i> : <i class="fa-solid fa-moon"></i> }
+            { sun==0 ? <i className="fa-solid fa-moon"></i> : <i class="fa-solid fa-sun"></i> }
             </a>
         </li>
       </ul>
@@ -51,4 +52,5 @@ const Navbar = () => {
      );
 }
  
+
 export default Navbar;
