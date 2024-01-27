@@ -46,7 +46,7 @@ export default function Navbar({children}){
           <a className="nav-link fw-semibold " href="#"  style={{color:fontcolor}}>About Me</a>
         </li>
         <li className="nav-item"  style={{marginLeft:'20px'}}>
-          <a className="nav-link fw-semibold " href="#"  style={{color:fontcolor}}>Codding Language</a>
+          <a className="nav-link fw-semibold " href="#"  style={{color:fontcolor}}>Coding Language</a>
         </li>
         <li className="nav-item" style={{marginLeft:'20px'}}>
           <a className="nav-link fw-semibold " aria-disabled="true"  style={{color:fontcolor}}>Latest Work</a>

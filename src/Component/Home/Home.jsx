@@ -1,10 +1,13 @@
 import hero from './1694966571091-removebg-preview.png';
 import image from './image2.png';
+import bg from './bg.png';
+import yellowbg from './yellobg.jpg' 
 import {useContext } from 'react';
 import Context from '../../ContextApi/Context';
+import About from '../ABoutUs/About';
 const Home = ({position}) => {  
 
-  const {sun, setsun}=useContext(Context);
+  const {sun}=useContext(Context);
   let navbarbgcolor="";
   if(position==1)
   navbarbgcolor = sun === 0 ? "whitesmoke" : "black";
@@ -16,7 +19,7 @@ const Home = ({position}) => {
       <div className="container-fluid " style={{ height: '70vh' ,backgroundColor:navbarbgcolor }}>
         <div className="row pt-5">
           <div className="col-3"></div>
-          <div className="col-4" style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
+          <div className="col-4 mt-4" style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
             <h1 style={{ fontSize: '50px' }}>
               <span style={{ color: 'gold' }}>Hello</span> <br />
               <span style={{color:fontcolor}}>I'm Chetan</span> 
@@ -26,9 +29,10 @@ const Home = ({position}) => {
               Hire Me
             </button>
           </div>
-          <div className="col-5">
-            <img src={hero} className='img-fluid' style={{ height: '55vh', width: '15vw' }} alt="" />
-          </div>
+          <div className="col-5" style={{position:'relative'}} >
+            <img src={hero} className='img-fluid' style={{ height: '55vh', width: '15vw' ,position:'absolute',left:'0',right:'0',zIndex:'2',marginLeft:"17px" }} alt="" />
+            <img src={yellowbg} className='img-fluid mt-4' style={{ height: '44vh', width: '15 vw',position:'absolute',left:'0',top:'50px',borderTopLeftRadius:"75px",borderEndEndRadius:"45px",borderTopRightRadius:"25px",borderEndStartRadius:"15px",zIndex:'1'}} alt="" />
+           </div>
           <div className="col-2"></div>
         </div>
       </div>
@@ -41,12 +45,13 @@ const Home = ({position}) => {
       <div className="container-fluid " style={{ height: '70vh' ,backgroundColor:navbarbgcolor }}>
       <div className="row pt-5">
         <div className="col-3"></div>
-        <div className="col-4">
-          <img src={image} className='img-fluid' style={{ height: '55vh', width: '15vw' }} alt="" />
-         </div>   
+        <div className="col-4" style={{position:'relative'}} >
+            <img src={image} className='img-fluid' style={{ height: '55vh', width: '15vw' ,position:'absolute',left:'0',marginLeft:"41  px" ,right:'0',zIndex:'2' }} alt="" />
+            <img src={yellowbg} className='img-fluid mt-4' style={{ height: '44vh', width: '20vw',position:'absolute',left:'0',top:'50px',zIndex:'1'}} alt="" />
+          </div>
         <div className="col-5" style={{ display: 'flex', justifyContent: 'start', flexDirection: 'column' }}>
-          <h1 style={{ fontSize: '50px' }}> <span style={{color:fontcolor}}> About Me </span></h1>
-          
+          <h2 style={{ fontSize: '50px' }}> <span style={{color:fontcolor}}> About Me </span></h2>
+          <About/>
         </div>
         <div className="col-2"></div>
       </div>
