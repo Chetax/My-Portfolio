@@ -25,8 +25,8 @@ const Home = ({position}) => {
               <span style={{color:fontcolor}}>I'm Chetan</span> 
             </h1>
             <h5 className="mt-1" style={{color:fontcolor}}>A Professional Web Developer And <br></br>UI/IX Designer</h5>
-            <button type="button" className="btn mt-5 btn-warning" style={{ width: '105px' }}>
-              Hire Me
+            <button type="button" className="btn mt-5 btn-warning" style={{ width: '180px' }}>
+              Download My CV
             </button>
           </div>
           <div className="col-4 " style={{position:'relative'}} >
