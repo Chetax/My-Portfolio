@@ -1,4 +1,5 @@
 import Context from '../../ContextApi/Context';
+import Corusoel from './Corusoel';
 import React from "react";
 import { useContext,useState } from "react";
 const Project = () => {
@@ -19,10 +20,11 @@ const Project = () => {
      <div className="col-2 text-center" style={ present===4 ? {color:"gold"} : {color:fontcolor} } onClick={()=>{setpresent(4);}}>Eccomerce</div>
     <div className="col-1">
     </div>
+
    </div>
   </div>
 
-
+<Corusoel/>
 
 
 </div>
