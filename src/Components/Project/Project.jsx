@@ -1,10 +1,8 @@
 function Project() {
     return (
-        <div>
-        <h1>
-            Hello It Is Project
-            </h1>
-        </div>
+  <>
+  <h1>Hello It's Project</h1>
+  </>
      );
 }
 

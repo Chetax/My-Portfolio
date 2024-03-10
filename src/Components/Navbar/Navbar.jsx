@@ -15,7 +15,7 @@ import {NavLink } from 'react-router-dom';
 import { Button } from '@mui/material';
 
 
-const pages = ['Home', 'AboutMe', 'Projects','ContactMe'];
+const pages = ['Home', 'AboutMe', 'Project','ContactMe'];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
