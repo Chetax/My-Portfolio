@@ -1,0 +1,13 @@
+@media (max-width:900px) {
+    .homeimage{
+      position: relative;
+      left: 10%; 
+    }
+}
+@media (max-width:600px) {
+   .homeimage{
+    position: relative;
+    left: 0%;
+    width: 60vw;
+   }  
+} 

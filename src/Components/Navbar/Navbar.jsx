@@ -61,7 +61,7 @@ function Navbar() {
             {pages.map((page) => (
             
             <NavLink to={page}>
-             <div data-aos="fade-down">
+             <div data-aos="fade-down" data-aos-once="true">
                  <Button to={page}
                 sx={{ mx: 2, color: 'black' }}
               >
