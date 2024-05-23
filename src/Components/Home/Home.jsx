@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Grid, Typography } from "@mui/material";
+import Hire from '../WhyHireMe/Hire';
 import Programming from "../ProgrammingSkill/Programming";
 import Homeimg from './Homeimg.png';
 import './Home.css';
@@ -61,6 +62,7 @@ function Home() {
        <Grid item  xs={12}  sm={3} md={3} lg={3} xl={3} textAlign={"center"}>{showdiv3&&<div data-aos-once="true" data-aos="fade-up">350+ DSA Problem Solved</div> }</Grid>
         </Grid>
 <Programming/>
+<Hire/>
     </Container>
   );
 }

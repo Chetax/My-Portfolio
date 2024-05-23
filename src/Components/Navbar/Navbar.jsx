@@ -10,6 +10,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import logo from './logo3.png';
 import { useEffect, useRef } from "react";
 import {NavLink } from 'react-router-dom';
 import { Button } from '@mui/material';
@@ -51,7 +52,7 @@ function Navbar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+         <img src={logo} style={{width:"125px"}}></img>
           </Typography>
 
           <Box sx={{ flexGrow: 1 }} />
