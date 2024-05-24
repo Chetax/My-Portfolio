@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Grid, Typography } from "@mui/material";
 import Hire from '../WhyHireMe/Hire';
 import Programming from "../ProgrammingSkill/Programming";
+import Project from "../Project/Project";
 import Homeimg from './Homeimg.png';
 import './Home.css';
 function Home() {
@@ -64,8 +65,9 @@ function Home() {
        <Grid item  xs={12}  sm={3} md={3} lg={3} xl={3} textAlign={"center"}>{showdiv2&&<div data-aos-once="true" data-aos="fade-up">15+ PR Merge in Open Source Project</div> }</Grid>
        <Grid item  xs={12}  sm={3} md={3} lg={3} xl={3} textAlign={"center"}>{showdiv3&&<div data-aos-once="true" data-aos="fade-up">450+ DSA Problem Solved</div> }</Grid>
         </Grid>
-<Programming/>
-<Hire/>
+     <Programming/>
+     <Hire/>
+     <Project/>
     </Container>
   );
 }
