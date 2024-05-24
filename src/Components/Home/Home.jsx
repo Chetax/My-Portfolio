@@ -32,7 +32,7 @@ function Home() {
         <Grid textAlign={"start"} xs={12} lg={6} md={6}  xl={6} sx={{paddingLeft:"5%",'@media(max-width:1200px) and (min-width:1000px)':{paddingLeft:"9%"}}} >
           <div data-aos="fade-right" data-aos-once="true">
             <Typography sx={{color:"grey",fontWeight:"semibold",paddingBottom:"15px",paddingLeft:"10px",fontSize:"24px",'@media(max-width:900px)':{textAlign:"center ",fontSize:25}}} >
-              Hello there, my name is
+              Hello there, I am
             </Typography>
           </div>
           <div data-aos="zoom-out-up" data-aos-once="true" className="mt-4 mb-2" style={{lineHeight:"5px"}}>
@@ -44,8 +44,11 @@ function Home() {
           </div>
           {showDescription && (
             <div data-aos="fade-up" data-aos-once="true">
-              <Typography sx={{color:"#e18284" ,fontSize:"45px",marginLeft:"10px" ,'@media(max-width:900px)':{textAlign:"center ",fontSize:35,lineHeight:1.5}}}>Web Designer & Developer</Typography>
-            </div>
+           <Typography 
+      sx={{ fontSize: "45px", marginLeft: "10px", background: "linear-gradient(to right, #e18284, #71298e)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", '@media(max-width:900px)': { textAlign: "center", fontSize: "35px", lineHeight: 1.5 } }}
+    >
+      Web Developer
+    </Typography>      </div>
           )}
         </Grid>
         <Grid textAlign={"center"} sx={{paddingRight:"9%",'@media(max-width:900px)':{textAlign:"center "}}}  xs={12} lg={6} md={6}  xl={6}>
@@ -58,8 +61,8 @@ function Home() {
       <Grid item    sm={1.5}md={1} lg={1} xl={1}></Grid>
 
        <Grid item  xs={12}  sm={3} md={3} lg={3} xl={3} textAlign={"center"}>{showdiv1&&<div data-aos-once="true" data-aos="fade-up"> 10+ Project </div> }</Grid>
-       <Grid item  xs={12}  sm={3} md={3} lg={3} xl={3} textAlign={"center"}>{showdiv2&&<div data-aos-once="true" data-aos="fade-up">15+ PR Merge in Open Source</div> }</Grid>
-       <Grid item  xs={12}  sm={3} md={3} lg={3} xl={3} textAlign={"center"}>{showdiv3&&<div data-aos-once="true" data-aos="fade-up">350+ DSA Problem Solved</div> }</Grid>
+       <Grid item  xs={12}  sm={3} md={3} lg={3} xl={3} textAlign={"center"}>{showdiv2&&<div data-aos-once="true" data-aos="fade-up">15+ PR Merge in Open Source Project</div> }</Grid>
+       <Grid item  xs={12}  sm={3} md={3} lg={3} xl={3} textAlign={"center"}>{showdiv3&&<div data-aos-once="true" data-aos="fade-up">450+ DSA Problem Solved</div> }</Grid>
         </Grid>
 <Programming/>
 <Hire/>
